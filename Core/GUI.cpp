@@ -1,10 +1,10 @@
 #include "GUI.h"
 
-#include "../imgui/imgui.h"
-#include "../imgui/imgui_impl_glfw.h"
-#include "../imgui/imgui_impl_opengl3.h"
+#include "../External/imgui/imgui.h"
+#include "../External/imgui/imgui_impl_glfw.h"
+#include "../External/imgui/imgui_impl_opengl3.h"
 
-#include "../Engine/utils.h"
+#include "../Core/utils.h"
 
 GUI::GUI(Window& window)
 {

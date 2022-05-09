@@ -1,7 +1,7 @@
 #pragma once
-#include "../Engine/ScreenSpaceShader.h"
-#include "../Engine/buffers.h"
-#include "../Engine/texture.h"
+#include "../Core/ScreenSpaceShader.h"
+#include "../Core/buffers.h"
+#include "../Core/texture.h"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>

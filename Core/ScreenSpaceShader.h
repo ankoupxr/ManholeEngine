@@ -1,7 +1,7 @@
 #pragma once
 #include "shader.h"
 #include <glad/glad.h>
-#include "../DrawableObjects/drawableObject.h"
+#include "../Technique/drawableObject.h"
 
 // refactors those shaders which write only into the screen space (e.g. post processing, ShaderToy.com), so only the fragment shader it's needed and the model is only two triangles
 class ScreenSpaceShader : drawableObject

@@ -2,10 +2,10 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_access.hpp>
 //#include <model.h>
-#include "../Engine/shader.h"
-#include "../Engine/buffers.h"
+#include "../Core/shader.h"
+#include "../Core/buffers.h"
 #include <GLFW/glfw3.h>
-#include "../Engine/Window.h"
+#include "../Core/Window.h"
 #include "drawableObject.h"
 
 class Water : public drawableObject

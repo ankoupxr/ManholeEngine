@@ -1,6 +1,6 @@
 #pragma once
-#include "../Engine/Window.h"
-#include "drawableObject.h"
+#include "../Core/Window.h"
+#include "../Technique/drawableObject.h"
 
 #include <list>
 

@@ -3,7 +3,7 @@
 
 #include <camera.h>
 #include <glm/glm.hpp>
-#include "../Engine/buffers.h"
+#include "../Core/buffers.h"
 #include <random>
 
 struct sceneElements {

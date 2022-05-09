@@ -4,16 +4,16 @@
 #endif
 #include <GLFW/glfw3.h>
 
-#include "Engine/Window.h"
-#include "Engine/shader.h"
-#include "Engine/ScreenSpaceShader.h"
-#include "Engine/texture.h"
+#include "Core/Window.h"
+#include "Core/shader.h"
+#include "Core/ScreenSpaceShader.h"
+#include "Core/texture.h"
 
-#include "DrawableObjects/VolumetricClouds.h"
-#include "DrawableObjects/Terrain.h"
-#include "DrawableObjects/Skybox.h"
-#include "DrawableObjects/Water.h"
-#include "DrawableObjects/CloudsModel.h"
+#include "Technique/VolumetricClouds.h"
+#include "Technique/Terrain.h"
+#include "Technique/Skybox.h"
+#include "Technique/Water.h"
+#include "Technique/CloudsModel.h"
 
 #include <camera.h>
 #include <stb_image.h>
@@ -23,19 +23,19 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/random.hpp>
 
-#include "Engine/glError.h"
+#include "Core/glError.h"
 
-#include "DrawableObjects/sceneElements.h"
-#include "DrawableObjects/drawableObject.h"
-#include "DrawableObjects/GUI.h"
+#include "Core/sceneElements.h"
+#include "Technique/drawableObject.h"
+#include "Core/GUI.h"
 
 #include <iostream>
 #include <vector>
 #include <functional>
 
-#include "../imgui/imgui.h"
-#include "../imgui/imgui_impl_glfw.h"
-#include "../imgui/imgui_impl_opengl3.h"
+#include "External/imgui/imgui.h"
+#include "External/imgui/imgui_impl_glfw.h"
+#include "External/imgui/imgui_impl_opengl3.h"
 
 int main()
 {

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
-#include "../Engine/ScreenSpaceShader.h"
+#include "../Core/ScreenSpaceShader.h"
 #include "drawableObject.h"
 #include <glm/gtc/matrix_transform.hpp>
 

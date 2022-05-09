@@ -1,9 +1,9 @@
 #pragma once
 #include <glm/glm.hpp>
-#include "../Engine/Shader.h"
-#include "sceneElements.h"
-#include "../Engine/ScreenSpaceShader.h"
-#include "../imgui/imgui.h"
+#include "../Core/shader.h"
+#include "../Core/sceneElements.h"
+#include "../Core/ScreenSpaceShader.h"
+#include "../External/imgui/imgui.h"
 #include "Skybox.h"
 
 #define INT_CEIL(n,d) (int)ceil((float)n/d)

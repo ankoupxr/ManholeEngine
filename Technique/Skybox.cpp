@@ -1,8 +1,8 @@
 #include "Skybox.h"
 
-#include "sceneElements.h"
-#include "../Engine/Window.h"
-#include "../imgui/imgui.h"
+#include "../Core/sceneElements.h"
+#include "../Core/Window.h"
+#include "../External/imgui/imgui.h"
 
 Skybox::Skybox()
 {
