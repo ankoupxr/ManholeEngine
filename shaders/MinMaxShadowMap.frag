@@ -86,6 +86,8 @@ float ShadowCalculation(vec3 fragPosWorldSpace)
     return shadow;
 }
 
+float3
+
 void main()
 {           
     vec3 color = texture(diffuseTexture, fs_in.TexCoords).rgb;

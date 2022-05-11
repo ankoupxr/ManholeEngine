@@ -74,6 +74,15 @@
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Technique\Shadow\MinMaxShadowMap.cpp">
+      <Filter>Technique\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Technique\Shadow\FastConventionalShadowFiltering.cpp">
+      <Filter>Technique\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Technique\Shadow\CascadeShadowMap.cpp">
+      <Filter>Technique\Shadow</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\screen.frag">
@@ -153,6 +162,9 @@
     <Filter Include="External\Imgui">
       <UniqueIdentifier>{e1e9848b-9620-474d-ab6a-f9e9167c2d4c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Technique\Shadow">
+      <UniqueIdentifier>{ecd7aba6-1129-4eec-b6f3-ba670460c493}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Technique\CloudsModel.h">
@@ -226,6 +238,15 @@
     </ClInclude>
     <ClInclude Include="Core\ScreenSpaceShader.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Technique\Shadow\MinMaxShadowMap.h">
+      <Filter>Technique\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Technique\Shadow\FastConventionalShadowFiltering.h">
+      <Filter>Technique\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Technique\Shadow\CascadeShadowMap.h">
+      <Filter>Technique\Shadow</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
