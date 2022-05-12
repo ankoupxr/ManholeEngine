@@ -1,12 +1,39 @@
 #include "CascadeShadowMap.h"
+#include <glad/glad.h>
+#include "../Core/texture.h"
+
+
+void CascadeShadowMap::setGui() 
+{
+    ImGui::Begin("Cascade Shadow Map: ");
+    ImGui::SliderInt("CascadeNum", &CascadeNum, 1, 10);
+    ImGui::End();
+}
+
+void CascadeShadowMap::initShaders() 
+{
+    ShadowMapShader = new Shader("ShadowMap");
+    ShadowMapShader->attachShader("shaders/shadow/shadow_mapping.vs")
+                   ->attachShader("shaders/shadow/shadow_mapping.fs")
+                   ->linkPrograms();
+    ShadowMapDepth = new Shader("ShadowMapDepth");
+    ShadowMapDepth->attachShader("shaders/shadow/shadow_mapping_depth.vs")
+                  ->attachShader("shaders/shadow/shadow_mapping_depth.fs")
+                  ->linkPrograms();
+}
 
 int CascadeShadowMap::GetCascadeNum() const
 {
     return CascadeNum;
 }
 
+void CascadeShadowMap::generateModelTextures() {
+
+}
+
 CascadeShadowMap::CascadeShadowMap(int _CascadeNum, Camera& camera)
 {
+    //initShaders();
     CascadeNum = _CascadeNum;
     SplitDistance(camera);
 }

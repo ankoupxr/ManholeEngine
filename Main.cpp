@@ -14,6 +14,7 @@
 #include "Technique/Skybox.h"
 #include "Technique/Water.h"
 #include "Technique/CloudsModel.h"
+#include "Technique/Shadow/CascadeShadowMap.h"
 
 #include <camera.h>
 #include <stb_image.h>
@@ -88,6 +89,8 @@ int main()
 	VolumetricClouds volumetricClouds(Window::SCR_WIDTH, Window::SCR_HEIGHT, &cloudsModel);
 	VolumetricClouds reflectionVolumetricClouds(1280, 720, &cloudsModel); // (expected) lower resolution framebuffers, so the rendering will be faster
 	
+	CascadeShadowMap cascadeshadow(5,camera);
+
 	gui.subscribe(&terrain)
 		.subscribe(&skybox)
 		.subscribe(&cloudsModel)

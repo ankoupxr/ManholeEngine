@@ -139,6 +139,21 @@
     <None Include="shaders\worley.comp">
       <Filter>Resource\Shader</Filter>
     </None>
+    <None Include="shaders\shadow\shadow_mapping.fs">
+      <Filter>Resource\Shader\shadow</Filter>
+    </None>
+    <None Include="shaders\shadow\shadow_mapping.vs">
+      <Filter>Resource\Shader\shadow</Filter>
+    </None>
+    <None Include="shaders\shadow\shadow_mapping_depth.fs">
+      <Filter>Resource\Shader\shadow</Filter>
+    </None>
+    <None Include="shaders\shadow\shadow_mapping_depth.gs">
+      <Filter>Resource\Shader\shadow</Filter>
+    </None>
+    <None Include="shaders\shadow\shadow_mapping_depth.vs">
+      <Filter>Resource\Shader\shadow</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Technique">
@@ -164,6 +179,9 @@
     </Filter>
     <Filter Include="Technique\Shadow">
       <UniqueIdentifier>{ecd7aba6-1129-4eec-b6f3-ba670460c493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Shader\shadow">
+      <UniqueIdentifier>{1f3997c0-65d2-4b51-aeec-bd80be52864c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

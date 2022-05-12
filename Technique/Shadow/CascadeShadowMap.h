@@ -1,5 +1,8 @@
 #pragma once
-#include "../../Core/shader.h"
+#include "../Core/shader.h"
+#include "../Core/sceneElements.h"
+#include "../Core/ScreenSpaceShader.h"
+#include "../External/imgui/imgui.h"
 #include <camera.h>
 #include <glm/glm.hpp>
 #include "../../Core/utils.h"
@@ -9,6 +12,7 @@ using namespace std;
 class  CascadeShadowMap
 {
 private:
+	Shader* ShadowMapShader, * ShadowMapDepth;
 	int CascadeNum;
 	vector<vector<glm::vec4>> SplitPointList;
 	void SplitDistance(Camera& camera);//计算摄像机视线空间中每个平截头体切片的近距离和远距离
@@ -23,5 +27,9 @@ public:
 	CascadeShadowMap(int _CascadeNum, Camera& camera);
 	virtual~CascadeShadowMap();
 
+
+	void setGui();
+	void initShaders();
+	void generateModelTextures();
 	void UpdateCsm(Camera& camera, glm::vec4 lightPos, glm::vec4 lightDirection);
 };

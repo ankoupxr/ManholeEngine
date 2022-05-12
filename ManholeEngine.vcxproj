@@ -182,6 +182,11 @@
     <None Include="shaders\copyFrame.frag" />
     <None Include="shaders\perlinworley.comp" />
     <None Include="shaders\post_processing.frag" />
+    <None Include="shaders\shadow\shadow_mapping.fs" />
+    <None Include="shaders\shadow\shadow_mapping.vs" />
+    <None Include="shaders\shadow\shadow_mapping_depth.fs" />
+    <None Include="shaders\shadow\shadow_mapping_depth.gs" />
+    <None Include="shaders\shadow\shadow_mapping_depth.vs" />
     <None Include="shaders\visualizeFbo.frag" />
     <None Include="shaders\volumetric_clouds.comp" />
     <None Include="shaders\screen.frag" />
