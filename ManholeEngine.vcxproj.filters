@@ -83,6 +83,9 @@
     <ClCompile Include="Technique\Shadow\CascadeShadowMap.cpp">
       <Filter>Technique\Shadow</Filter>
     </ClCompile>
+    <ClCompile Include="Physics\RigidBody.cpp">
+      <Filter>Core\Physics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\screen.frag">
@@ -183,6 +186,9 @@
     <Filter Include="Resource\Shader\shadow">
       <UniqueIdentifier>{1f3997c0-65d2-4b51-aeec-bd80be52864c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\Physics">
+      <UniqueIdentifier>{9cbeb741-6a4c-4c0b-9071-6091f342a7ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Technique\CloudsModel.h">
@@ -265,6 +271,9 @@
     </ClInclude>
     <ClInclude Include="Technique\Shadow\CascadeShadowMap.h">
       <Filter>Technique\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\RigidBody.h">
+      <Filter>Core\Physics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
